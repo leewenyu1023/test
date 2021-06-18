@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>食憶</title>
+  <style type="text/css" media="screen">
+    @import url(../assets/css/manager.css);
+    @import url(../assets/css/header.css);
+    @import url(../assets/css/footer.css);
+  </style>
+</head>
+
+<body>
+  <button onclick="topFunction()" id="topBtn"><img src="../assets/img/up.png"></button>
+  <div class="header">
+    <div class="toplogo"><a href="">
+        <h1 class="logo">食憶</h1>
+      </a></div>
+
+    <ul class="ull">
+      <a href="manager.html" style="text-decoration:none">
+        <li class="topli">
+          編輯商品
+        </li>
+      </a>
+      <a href="manageradd.html" style="text-decoration:none">
+        <li class="topli">
+          新增商品
+        </li>
+      </a>
+      <a href="order.html" style="text-decoration:none">
+        <li class="topli" style="padding-right: 0.5cm;">
+          查詢訂單
+        </li>
+      </a>
+    </ul>
+    <a href=""><button class="logout" type="text">登出</button></a>
+  </div>
+  <div class="title">商品總覽</div>
+  <div class="tab">
+    <table>
+      <tr>
+        <th>商品代號</th>
+        <th>商品種類</th>
+        <th>商品名稱</th>
+        <th>單價</th>
+        <th>庫存</th>
+        <th>商品簡介</th>
+        <th></th>
+        <th></th>
+      </tr>
+      <tr>
+        <form action="" method="POST">
+          <td><input type="text" value="" name="product_id" readonly></td>
+          <td><input type="text" value="" name="product_type"></td>
+          <td><input type="text" value="" name="product_name"></td>
+          <td><input type="text" value="" name="product_price"></td>
+          <td><input type="text" value="" name="product_num"></td>
+          <td><input type="text" value="" name="product_node"></td>
+          <td><input type="submit" value="編輯"></td>
+          <td><input type="submit" value="刪除"></td>
+        </form>
+      </tr>
+    </table>
+  </div>
+  <footer>
+    <br>
+    <p style="color: white;font-size: 30px;">食憶</p>
+    <br>
+    <p style="font-size: 25px; color: white;">瀏覽人數:100</p>
+    <br>
+    <p style="color: white; font-size: 25px;">CONTACT US</p>
+    <br>
+    <p class="outphone" style=" font-size: 25px; color: white;">
+      <img class="phone" src="../assets/img/phone.png">&nbsp;&nbsp;(03)1234-7654
+    </p>
+    <br>
+    <button class="item" onclick="window.open('')" style="background-color: #9CA8B8;border: none;"><img
+        src="../assets/img/fb.png"></button>
+    <button class="item" onclick="window.open('')" style="background-color: #9CA8B8;border: none;"><img
+        src="../assets/img/ig.png"></button>
+    <button class="item" onclick="window.open('')" style="background-color: #9CA8B8;border: none;"><img
+        src="../assets/img/mail.png"></button>
+    <br><br>
+  </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script src="../assets/js/owl.carousel.min.js"></script>
+<script>
+  $(function () {
+    $('#topBtn').click(function () {
+      $('html,body').animate({
+        scrollTop: 0
+      }, 333);
+    });
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 300) {
+        $('#topBtn').fadeIn(222);
+      } else {
+        $('#topBtn').stop().fadeOut(222);
+      }
+    }).scroll();
+  });
+</script>
+
+</html>

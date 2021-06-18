@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  text-align: center;
+  background-color: #9CA8B8;
+}
+
+.header a {
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+  font-family: "小賴字體 等寬 SC";
+}
+
+.toplogo {
+  text-align: center;
+  width: 10%;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.topli {
+  text-align: center;
+  position: relative;
+  top: -15px;
+  display: inline;
+  margin: 20px 15px 0px 15px;
+  padding-right: 5px;
+  border-right: 1px #FFFAF4 solid;
+}
+
+.topright {
+  position: absolute;
+  top: 55px;
+  left: 41cm;
+}
+
+.tools {
+  width: 45px;
+  height: 45px;
+}
+
+.right {
+  position: relative;
+  margin: 15px;
+  display: inline-block;
+  border: 0;
+  background: rgba(0, 0, 0, 0);
+}
+
+.dialog {
+  top: 20%;
+  left: 38%;
+  border-radius: 8px;
+  display: none;
+  z-index: 100;
+  transition: .5s;
+  position: absolute;
+  background-color: #9CA8B8;
+  backdrop-filter: blur(8px);
+  width: 600px;
+  height: 720px;
+  padding-top: 40px;
+  font-family: "小賴字體 等寬 SC";
+}
+
+.dialog>.close {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+
+.dialog>.close img {
+  background-color: #9CA8B8;
+  width: 35px;
+  height: 35px;
+  border-radius: 999em;
+  opacity: 0.5;
+}
+
+.dialog>.close img:hover {
+  background-color: #9CA8B8;
+  width: 35px;
+  height: 35px;
+  border-radius: 999em;
+  opacity: 1;
+}
+
+
+.login {
+  width: 500px;
+  height: 620px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #9CA8B8;
+
+}
+
+.form {
+  width: 500px;
+  height: 600px;
+  color: #FFF;
+  background-color: #9CA8B8;
+}
+
+.form h2 {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #FFF;
+}
+
+.form .group {
+  margin-bottom: 20px;
+}
+
+.form label {
+  line-height: 2;
+}
+
+.form input {
+  width: 500px;
+  height: 80px;
+  border-right: 1px solid rgba(75, 75, 75, 0.8);
+  border-top: 1px solid rgba(75, 75, 75, 0.8);
+  border-left: 1px solid rgba(75, 75, 75, 0.8);
+  border-bottom: : 1px solid #fff;
+  line-height: 3;
+  border-radius: 5px;
+}
+
+.form .btn-group {
+  font-size: 20px;
+  margin: 10px 40px;
+}
+
+.form .btn {
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  width: 400px;
+  height: 70px;
+  padding: 10px 0;
+  margin-top: 7px;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: 1px solid #C7C7C7;
+  background-color: #C4CDDB;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  color: #7a6c5d;
+  font-size: 40px;
+  font-family: "小賴字體 等寬 SC";
+  text-decoration: none;
+  font-weight: bolder;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: none;
+  background-color: #ffffff;
+  border: 1px solid #eddcd2;
+  color: #301010;
+}
+
+.btn:active {
+  top: 1px;
+  position: relative;
+}
+
+.search {
+  position: absolute;
+  height: 3cm;
+  top: 25px;
+  left: 6cm;
+}
+
+.search_text {
+  position: relative;
+  left: 10px;
+  margin-left: 1px;
+  border-radius: 10px;
+  height: 0.8cm;
+  width: 5cm;
+  font-size: 24px;
+  display: block;
+}

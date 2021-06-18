@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>食憶</title>
+  <style type="text/css" media="screen">
+    @import url(assets/css/header.css);
+    @import url(assets/css/body.css);
+    @import url(assets/css/footer.css);
+  </style>
+  <script src="assets/js/dialog.js"></script>
+</head>
+
+<body>
+  <button onclick="topFunction()" id="topBtn"><img src="assets/img/up.png"></button>
+  <div class="header">
+    <div class="toplogo"><a href="index.html">
+        <h1 class="logo">食憶</h1>
+      </a></div>
+
+    <ul class="ull">
+      <a href="all.html" style="text-decoration:none">
+        <li class="topli">
+          ALL
+        </li>
+      </a>
+      <a href="index.html#hot" style="text-decoration:none">
+        <li class="topli">
+          HOT
+        </li>
+      </a>
+      <a href="page/aboutus.html" style="text-decoration:none">
+        <li class="topli">
+          ABOUT US
+        </li>
+      </a>
+    </ul>
+    <!--若未登入
+    <div class="topright">
+      <button class="right" onclick="showDialog();"><img src="assets/img/person.png" class="tools"></button>
+      <button class="right" onclick="window.alert('請先登入!!')"><img src="assets/img/buycar.png" class="tools"></button>
+      <div class="right"><img src="assets/img/search.png" class="tools"></div>
+      <div class="search">
+        <form>
+          <input class="search_text">
+        </form>
+      </div>
+    </div>
+-->
+
+    <div class="topright">
+      <a href="member.html"><button class="right"><img src="assets/img/person.png" class="tools"></button></a>
+      <a href="cart.html"><button class="right"><img src="assets/img/buycar.png" class="tools"></button></a>
+      <div class="right"><img src="assets/img/search.png" class="tools"></div>
+      <div class="search">
+        <form>
+          <input class="search_text">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!--登入-->
+  <div onclick="closescr();" class="dialog" id="dialog">
+    <div class="close"><a href="#" onclick="closeDialog();"><img src="assets/img/cross.png"></a></div>
+    <div class="BOX1" style="z-index:-1;width: 100%;">
+      <div class="login" style="margin:0px auto;">
+        <form class="form" action="" method="POST">
+          <h2 style="color:#FFF;">會員登入</h2>
+          <div class="group">
+            <label for="user-id" style="color:#FFF; font-size: 30px;">Member account</label>
+            <input type="text" name="userid" id="userid" maxlength="8" required>
+          </div>
+          <div class="group">
+            <label for="user-password" style="color:#FFF;font-size: 30px;">Password</label>
+            <input type="password" name="userpassword" id="userpassword" maxlength="8" required>
+          </div>
+          <div class="btn-group">
+            <button class="btn" type="submit">login</button><br>
+          </div>
+          <div class="btn-group">
+            <button class="btn" onclick="window.open('addmember.html')">Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--header結束-->
+
+  <div class="title">
+    <h1 style="font-size: 50px;">註冊會員</h1>
+  </div>
+  <div class="register">
+    <form action="" method="POST">
+      <div class="group-1">
+        <label for="user-id">會員帳號(8碼)</label>
+        <input type="text" name="userid" placeholder="請輸入會員帳號" maxlength="8" required>
+      </div>
+
+      <div class="group-1">
+        <label for="user-pwd">會員密碼(8碼)</label>
+        <input type="text" name="userpwd" placeholder="請輸入會員密碼" maxlength="8" required>
+      </div>
+
+      <div class="group-1">
+        <label for="user-name">會員姓名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" name="username" placeholder="請輸入會員姓名" required>
+      </div>
+
+      <div class="group-1">
+        <label for="user-phone">手機號碼&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" name="phone" placeholder="請輸入手機號碼" required>
+      </div>
+      <div class="group-1">
+        <label for="user-mail">電子郵件&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="email" name="email" placeholder="請輸入電子郵件" required>
+      </div>
+
+      <div class="group-1">
+        <label for="user-add">地址(選填)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" name="address" placeholder="請輸入地址">
+      </div>
+
+
+      <div class="group-1">
+        <button class="btn-1" type="reset">重置</button>
+        <button class="btn-1" type="submit">註冊</button>
+      </div>
+    </form>
+  </div>
+  <footer style="margin-top: 4cm;">
+    <br>
+    <p style="color: white;">食憶</p>
+    <br>
+    <p style="font-size: 25px; color: white;">瀏覽人數:100</p>
+    <br>
+    <p style="color: white; font-size: 25px;">CONTACT US</p>
+    <br>
+    <p class="outphone" style=" font-size: 25px; color: white;">
+      <img class="phone" src="assets/img/phone.png">&nbsp;&nbsp;(03)1234-7654
+    </p>
+    <br>
+    <button class="item" onclick="window.open('')" style="background-color: #9CA8B8;border: none;"><img
+        src="assets/img/fb.png"></button>
+    <button class="item" onclick="window.open('')" style="background-color: #9CA8B8;border: none;"><img
+        src="assets/img/ig.png"></button>
+    <button class="item" onclick="window.open('')" style="background-color: #9CA8B8;border: none;"><img
+        src="assets/img/mail.png"></button>
+    <br><br>
+  </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script src="../assets/js/owl.carousel.min.js"></script>
+<script>
+  $(function () {
+    $('#topBtn').click(function () {
+      $('html,body').animate({
+        scrollTop: 0
+      }, 333);
+    });
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 300) {
+        $('#topBtn').fadeIn(222);
+      } else {
+        $('#topBtn').stop().fadeOut(222);
+      }
+    }).scroll();
+  });
+</script>
+
+</html>

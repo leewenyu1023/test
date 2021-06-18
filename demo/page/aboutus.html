@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>食憶</title>
+  <style type="text/css" media="screen">
+    @import url(../assets/css/header.css);
+    @import url(../assets/css/body.css);
+    @import url(../assets/css/footer.css);
+  </style>
+  <script src="../assets/js/dialog.js"></script>
+</head>
+
+<body>
+  <button onclick="topFunction()" id="topBtn"><img src="../assets/img/up.png"></button>
+  <div class="header">
+    <div class="toplogo"><a href="../index.html">
+        <h1 class="logo">食憶</h1>
+      </a></div>
+
+    <ul class="ull">
+      <a href="../all.html" style="text-decoration:none">
+        <li class="topli">
+          ALL
+        </li>
+      </a>
+      <a href="../index.html#hot" style="text-decoration:none">
+        <li class="topli">
+          HOT
+        </li>
+      </a>
+      <a href="aboutus.html" style="text-decoration:none">
+        <li class="topli">
+          ABOUT US
+        </li>
+      </a>
+    </ul>
+    <!--若未登入
+    <div class="topright">
+      <button class="right" onclick="showDialog();"><img src="../assets/img/person.png" class="tools"></button>
+      <button class="right" onclick="window.alert('請先登入!!')"><img src="../assets/img/buycar.png" class="tools"></button>
+      <div class="right"><img src="../assets/img/search.png" class="tools"></div>
+      <div class="search">
+        <form>
+          <input class="search_text">
+        </form>
+      </div>
+    </div>
+-->
+
+    <div class="topright">
+      <a href="../member.html"><button class="right"><img src="../assets/img/person.png" class="tools"></button></a>
+      <a href="../cart.html"><button class="right"><img src="../assets/img/buycar.png" class="tools"></button></a>
+      <div class="right"><img src="../assets/img/search.png" class="tools"></div>
+      <div class="search">
+        <form>
+          <input class="search_text">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!--登入-->
+  <div onclick="closescr();" class="dialog" id="dialog">
+    <div class="close"><a href="#" onclick="closeDialog();"><img src="../assets/img/cross.png"></a></div>
+    <div class="BOX1" style="z-index:-1;width: 100%;">
+      <div class="login" style="margin:0px auto;">
+        <form class="form" action="" method="POST">
+          <h2 style="color:#FFF;">會員登入</h2>
+          <div class="group">
+            <label for="user-id" style="color:#FFF; font-size: 30px;">Member account</label>
+            <input type="text" name="userid" id="userid" maxlength="8" required>
+          </div>
+          <div class="group">
+            <label for="user-password" style="color:#FFF;font-size: 30px;">Password</label>
+            <input type="password" name="userpassword" id="userpassword" maxlength="8" required>
+          </div>
+          <div class="btn-group">
+            <button class="btn" type="submit">login</button><br>
+          </div>
+          <div class="btn-group">
+            <button class="btn" onclick="window.open('../addmember.html')">Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--header結束-->
+  <div class="title">
+    <h1 style="font-size: 50px;">關於我們</h1>
+  </div>
+
+  <div class="us">
+    <div class="content-us">
+      <div class="us-photo">
+        <img src="../assets/img/10844107.jpg" class="teimg1">
+      </div>
+      <div class="usdetail" style="position: relative;
+  top: -8cm;">
+        <p class="teus">
+          資管二甲<br>
+          10844107
+          張凱涵<br>
+          心得:這次是由我們甲班做後端，這個難度跟前端感覺又不太一樣了，希望經過這一整個學期我能夠在製作網頁的前後端都有所收穫！
+        </p>
+        <a href="https://www.facebook.com/profile.php?id=100004585236603" target="_blank" title="FaceBook">
+          <img src="../assets/img/fb.jpg" alt="fb" class="teicon"></a>
+        <a href="https://www.instagram.com/han___ann/?hl=zh-tw" target="_blank" title="Instagram">
+          <img src="../assets/img/ig1.png" alt="ig" class="teicon"></a>
+      </div>
+    </div>
+
+    <div class="content-us" style="background-color:#D7E7DD;">
+      <div class="us-photo-r">
+        <img src="../assets/img/10844138.jpg" class="teimg2">
+      </div>
+      <div class="usdetail-r">
+        <p class="teus">
+          資管二甲<br>
+          10844138
+          方怡情<br>
+          心得:做期末報告的過程中讓我了解到自己很多不足的地方，也讓我發現原來一個網站需要的不只是呈現給顧客的頁面，還有賣者本身需要紀錄的資料也很重要，希望未來我能學到更多東西，讓自己多一項專長！希望經過這一整個學期我能夠在製作網頁的前後端都有所收穫！
+        </p>
+        <a href="https://www.facebook.com/feng.zi.737" target="_blank" title="FaceBook">
+          <img src="../assets/img/fb.jpg" alt="fb" class="teicon-f"></a>
+        <a href="https://www.instagram.com/fx657vac/?hl=zh-tw" target="_blank" title="Instagram">
+          <img src="../assets/img/ig1.png" alt="ig" class="teicon-f"></a>
+      </div>
+    </div>
+
+    <div class="content-us">
+      <div class="us-photo">
+        <img src="../assets/img/10844206.jpg" class="teimg1">
+      </div>
+      <div class="usdetail">
+        <p class="teus">
+          資管二乙<br>
+          10844206
+          李玟俞<br>
+          心得:上學期做後端真的是慘不忍睹，這學期做前端就很有成就感，而且因為之前做過後端，所以這學期也比較知道前端要怎麼做後端會比較方便，希望這學期可以做出一個比上學期更完整的網站！
+        </p>
+        <a href="https://www.facebook.com/vivian.lee.1426" target="_blank" title="FaceBook">
+          <img src="../assets/img/fb.jpg" alt="fb" class="teicon"></a>
+        <a href="https://www.instagram.com/yu_10.23/?hl=zh-tw" target="_blank" title="Instagram">
+          <img src="../assets/img/ig1.png" alt="ig" class="teicon"></a>
+      </div>
+    </div>
+
+    <div class="content-us" style="background-color:#D7E7DD;">
+      <div class="us-photo-r">
+        <img src="../assets/img/10844224.jpg" class="teimg2">
+      </div>
+      <div class="usdetail-r" style="margin-top: 0.8cm;">
+        <p class="teus">
+          資管二乙<br>
+          10844224
+          徐如伶<br>
+          心得:有了上學期網程的經驗之後，做前端時也多了一些經驗，更知道要做些什麼或是該怎麼做，雖然常常忘記很多地方該怎麼做，但網路上也很多資料可以找，希望可以做出一個比較完整的網站。
+        </p>
+        <a href="https://www.facebook.com/ruling0731" target="_blank" title="FaceBook">
+          <img src="../assets/img/fb.jpg" alt="fb" class="teicon"></a>
+        <a href="https://www.instagram.com/ruling_0731/?hl=zh-tw" target="_blank" title="Instagram">
+          <img src="../assets/img/ig1.png" alt="ig" class="teicon"></a>
+      </div>
+    </div>
+  </div>
+
+  <footer style="margin-top: 4cm;">
+    <br>
+    <p style="color: white;">食憶</p>
+    <br>
+    <p style="font-size: 25px; color: white;">瀏覽人數:100</p>
+    <br>
+    <p style="color: white; font-size: 25px;">CONTACT US</p>
+    <br>
+    <p class="outphone" style=" font-size: 25px; color: white;">
+      <img class="phone" src="../assets/img/phone.png">&nbsp;&nbsp;(03)1234-7654
+    </p>
+    <br>
+    <button class="item" onclick="window.open('')" style="background-color: #9CA8B8;border: none;"><img
+        src="../assets/img/fb.png"></button>
+    <button class="item" onclick="window.open('')" style="background-color: #9CA8B8;border: none;"><img
+        src="../assets/img/ig.png"></button>
+    <button class="item" onclick="window.open('')" style="background-color: #9CA8B8;border: none;"><img
+        src="../assets/img/mail.png"></button>
+    <br><br>
+  </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script src="../assets/js/owl.carousel.min.js"></script>
+<script>
+  $(function () {
+    $('#topBtn').click(function () {
+      $('html,body').animate({
+        scrollTop: 0
+      }, 333);
+    });
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 300) {
+        $('#topBtn').fadeIn(222);
+      } else {
+        $('#topBtn').stop().fadeOut(222);
+      }
+    }).scroll();
+  });
+</script>
+
+</html>

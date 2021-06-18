@@ -1,0 +1,819 @@
+body {
+  background-color: #FFFAF4;
+}
+
+/*首頁*/
+.marquee {
+  position: relative;
+  top: 1.5cm;
+  width: 1000px;
+  height: 600px;
+  display: block;
+  margin: auto;
+  border-radius: 18px;
+}
+
+.marquee:hover div {
+  animation-play-state: paused;
+}
+
+.marquee div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: round 12s linear infinite;
+}
+
+@keyframes round {
+  6.225% {
+    opacity: 1;
+  }
+
+  33.2% {
+    opacity: 1;
+  }
+
+  39.425% {
+    opacity: 0;
+  }
+
+}
+
+
+.marquee div:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.marquee div:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.marquee div:nth-child(3) {
+  animation-delay: 8s;
+}
+
+
+
+.product {
+  height: 20cm;
+  position: relative;
+  top: 5cm;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  top: 4cm;
+  left: -15cm;
+  display: inline-block;
+  background-color: #E3D9CF;
+  width: 405px;
+  height: 405px;
+  padding: 0.5cm;
+}
+
+.container2 {
+  position: relative;
+  top: -8.9cm;
+  display: inline-block;
+  background-color: #E3D9CF;
+  width: 405px;
+  height: 405px;
+  padding: 0.5cm;
+}
+
+.container3 {
+  position: relative;
+  top: -21.8cm;
+  left: 15cm;
+  display: inline-block;
+  background-color: #E3D9CF;
+  width: 405px;
+  height: 405px;
+  padding: 0.5cm;
+}
+
+.product-mar {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  display: block;
+  margin: auto;
+}
+
+.product-mar:hover div {
+  animation-play-state: paused;
+}
+
+.product-mar div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: round2 8s linear infinite;
+}
+
+@keyframes round2 {
+  6.225% {
+    opacity: 1;
+  }
+
+  33.2% {
+    opacity: 1;
+  }
+
+  39.425% {
+    opacity: 0;
+  }
+
+}
+
+.product-mar div:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.product-mar div:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.product-mar div:nth-child(3) {
+  animation-delay: 5s;
+}
+
+p {
+  font-size: 40px;
+  font-family: "小賴字體 等寬 SC";
+  color: black;
+}
+
+h1 {
+  font-family: "小賴字體 等寬 SC";
+  margin: auto;
+}
+
+.pro-title {
+  position: relative;
+  top: 2cm;
+  font-size: 60px;
+}
+
+.pro-p {
+  position: relative;
+  left: 10cm;
+  top: 5.1cm;
+  width: 3cm;
+}
+
+.pro-p2 {
+  position: relative;
+  top: -7.8cm;
+  left: 25.2cm;
+  width: 3cm;
+}
+
+.pro-p3 {
+  position: relative;
+  left: 39.5cm;
+  top: -20.7cm;
+  width: 5cm;
+}
+
+
+
+/*排行榜*/
+.hot {
+  text-align: center;
+  position: relative;
+  top: 6cm;
+}
+
+.hot h1 {
+  position: relative;
+  top: 1cm;
+  font-size: 60px;
+  font-family: "小賴字體 等寬 SC";
+}
+
+.hotpast {
+  width: 4cm;
+  height: 4cm;
+  position: relative;
+  top: -10cm;
+}
+
+.hot1 {
+  position: relative;
+  left: -2.5cm;
+  z-index: -1;
+}
+
+.hot2 {
+  position: relative;
+  left: -2.5cm;
+  width: 700px;
+  height: 500px;
+  z-index: -1;
+}
+
+.hotpast2 {
+  width: 4cm;
+  height: 4cm;
+  position: relative;
+  top: -11cm;
+  left: 650px;
+}
+
+.hot3 {
+  position: relative;
+  left: -2.5cm;
+  width: 700px;
+  height: 500px;
+  z-index: -1;
+}
+
+.hotpast3 {
+  width: 4cm;
+  height: 4cm;
+  position: relative;
+  top: -11cm;
+}
+
+.hot-r {
+  height: 500px;
+  margin-top: 4cm;
+}
+
+
+.hot-r:hover {
+  animation-name: example;
+  animation-duration: 2s;
+  position: relative;
+  animation-fill-mode: forwards;
+}
+
+@keyframes example {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: -10cm;
+  }
+}
+
+
+.hot-l {
+  height: 500px;
+  margin-top: 3cm;
+}
+
+.hot-l:hover {
+  animation-name: example2;
+  animation-duration: 2s;
+  position: relative;
+  animation-fill-mode: forwards;
+}
+
+@keyframes example2 {
+  from {
+    left: 0;
+  }
+
+  to {
+    padding-left: 25cm;
+  }
+}
+
+.hot-detail {
+  padding: 15px;
+  line-height: 1.5cm;
+  margin-top: 3cm;
+  border: 8px orange dashed;
+  width: 550px;
+}
+
+.d-out-r {
+  opacity: 0;
+  position: relative;
+  top: -13cm;
+  height: 500px;
+}
+
+.d-out-r:hover {
+  animation-name: example3;
+  animation-duration: 5s;
+  position: relative;
+  animation-fill-mode: forwards;
+}
+
+@keyframes example3 {
+  from {
+    opacity: 0;
+    padding-left: 35cm;
+  }
+
+  to {
+    opacity: 1;
+    padding-left: 40cm;
+  }
+}
+
+.d-out-l {
+  opacity: 0;
+  position: relative;
+  top: -13cm;
+  height: 500px;
+}
+
+.d-out-l:hover {
+  animation-name: example4;
+  animation-duration: 4s;
+  position: relative;
+  animation-fill-mode: forwards;
+}
+
+@keyframes example4 {
+  30% {
+    opacity: 0;
+    left: -18cm;
+  }
+
+  100% {
+    opacity: 1;
+    left: -18cm;
+  }
+}
+
+
+
+/*購物車*/
+
+.title {
+  margin-top: 3cm;
+  text-align: center;
+}
+
+table {
+  border: none;
+  border-collapse: collapse;
+}
+
+tr {
+  text-align: center;
+  font-size: 40px;
+  font-family: "小賴字體 等寬 SC";
+}
+
+.cart-table th {
+  border-bottom: 1px black solid;
+}
+
+.cart-table {
+  margin-left: 6cm;
+  margin-top: 3cm;
+  text-align: center;
+}
+
+input {
+  height: 30px;
+  width: 180px;
+}
+
+.paybtn img {
+  width: 60px;
+  height: 50px;
+  position: relative;
+  left: 20px;
+}
+
+.paybtn {
+  font-family: "小賴字體 等寬 SC";
+  text-decoration: none;
+  color: black;
+}
+
+.cart-pay {
+  background-color: #D1DFE3;
+  padding: 10px;
+  width: 2.8cm;
+  position: relative;
+  top: 9cm;
+  left: 43cm;
+}
+
+/*結帳*/
+.pay-list {
+  height: 10cm;
+  margin-top: 5cm;
+  padding-left: 5cm;
+}
+
+.pay-list table {
+  width: 20cm;
+  line-height: 3cm;
+}
+
+.pay-list2 {
+  line-height: 2cm;
+  position: relative;
+  top: -8cm;
+  margin-left: 27cm;
+}
+
+.pay-list select {
+  margin-left: 5cm;
+  margin-top: 0.5cm;
+  font-size: 20px;
+  height: 1cm;
+}
+
+.pay-list2 .shipway,
+.payway {
+  display: flex;
+}
+
+.buy-ok {
+  margin-top: 1.5cm;
+  margin-left: 15cm;
+}
+
+.buy-ok input {
+  border: none;
+  background-color: #D1DFE3;
+  height: 60px;
+  font-size: 25px;
+  font-family: "小賴字體 等寬 SC";
+}
+
+/*註冊*/
+.register {
+  text-align: center;
+  margin: 0px auto;
+}
+
+.group-1 {
+  font-family: "小賴字體 等寬 SC";
+  font-size: 30px;
+  margin-top: 3cm;
+}
+
+.group-1 input {
+  width: 10cm;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: #FFFAF4;
+  font-size: 20px;
+}
+
+.group-1 label {
+  text-align: left;
+}
+
+.infor {
+  text-align: left;
+}
+
+.btn-1 {
+  font-family: "小賴字體 等寬 SC";
+  border: none;
+  font-size: 20px;
+  margin-right: 1cm;
+  margin-left: 1cm;
+  width: 3cm;
+  height: 1cm;
+  background-color: #D1DFE3;
+}
+
+.btn-1:hover {
+  color: white;
+  border: 5px #9CA8B8 solid;
+}
+
+/*會員中心*/
+.img-member {
+  width: 0.9cm;
+}
+
+.member-title {
+  margin-left: 10cm;
+  margin-top: 4cm;
+  font-size: 40px;
+  display: inline-block;
+  font-family: "小賴字體 等寬 SC";
+}
+
+.group-2 {
+  font-family: "小賴字體 等寬 SC";
+  margin-left: 10cm;
+  margin-top: 2cm;
+}
+
+.edit label {
+  font-size: 28px;
+}
+
+.edit input {
+  height: 1.5cm;
+  width: 10cm;
+  font-size: 20px;
+}
+
+.group-3 {
+  font-family: "小賴字體 等寬 SC";
+  margin-left: 30cm;
+  margin-top: -8.8cm;
+}
+
+.edit-btn {
+  margin-left: 1cm;
+  margin-top: 1cm;
+  background-color: #E7E5CA;
+  padding: 10px;
+  font-family: "小賴字體 等寬 SC";
+  border: none;
+  font-size: 20px;
+}
+
+.edit-btn:hover {
+  opacity: 0.8;
+}
+
+.order {
+  margin-top: 3cm;
+  margin-left: 9cm;
+}
+
+.order th {
+  font-size: 30px;
+  width: 10cm;
+  border-bottom: 3px black solid;
+}
+
+
+.order td {
+  padding: 10px;
+}
+
+.comment {
+  margin-top: 3cm;
+  margin-left: 9cm;
+}
+
+.comment th {
+  font-size: 30px;
+  width: 20cm;
+  border-bottom: 3px black solid;
+}
+
+.logout {
+  font-family: "小賴字體 等寬 SC";
+  height: 80px;
+  width: 80px;
+  font-size: 35px;
+  position: fixed;
+  right: 2.05cm;
+  bottom: 5cm;
+  border-radius: 50%;
+  border: none;
+  background-color: #D1DFE3;
+}
+
+.logout:hover {
+  color: white;
+  border: 3px white solid;
+}
+
+/*商品頁*/
+.sell h1 {
+  text-align: center;
+  margin-top: 3cm;
+}
+
+.page-main {
+  margin-left: 12cm;
+  width: 55%;
+}
+
+.details p {
+  line-height: 55px;
+  font-size: 35px;
+}
+
+.page-img {
+  margin-right: 1cm;
+  width: 550px;
+  float: left;
+  margin-top: 1cm;
+}
+
+.pmbutt {
+  font-size: 30px;
+  border: none;
+  background-color: #E7E5CA;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+}
+
+#txt {
+  font-size: 25px;
+  text-align: center;
+  height: 50px;
+  width: 80px;
+}
+
+.buybutt {
+  border: 0;
+  background-color: hsl(217, 82%, 78%);
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  font-size: 25px;
+  margin-top: 1cm;
+  margin-left: 19cm;
+}
+
+.msgsub {
+  height: 50px;
+  width: 100px;
+  font-size: 25px;
+  margin-left: 10px;
+  border: none;
+  background-color: #E7E5CA;
+}
+
+.msgsub:hover {
+  color: white;
+}
+
+.msghr {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 1500px;
+}
+
+.msgg {
+  background-color: #ffffff;
+  border: 3px rgb(127, 135, 177) double;
+  font-size: 24px;
+  width: 1000px;
+  height: 150px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.msgggname {
+  text-align: left;
+  margin-left: 12cm;
+  border: 2px solid #0c074d;
+  padding: 15px 40px;
+  background: #eeeeee;
+  width: 700px;
+  border-radius: 25px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  padding: 30px;
+}
+
+.msggg {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.teb {
+  width: 50px;
+  text-align: center;
+}
+
+.pmbutt {
+  width: 30px;
+  text-align: center;
+}
+
+.massage {
+  text-align: center;
+  margin-top: 0.5cm;
+}
+
+#topBtn {
+  z-index: 99;
+  border: none;
+  background-color: transparent;
+  position: fixed;
+  right: 2cm;
+  bottom: 2cm;
+}
+
+#topBtn img {
+  width: 80px;
+}
+
+/*關於我們*/
+.content-us {
+  background-color: #D0DBD7;
+  margin: auto;
+  width: 45cm;
+  height: 13cm;
+  margin-top: 3cm;
+}
+
+.teimg1 {
+  transform: scale(1, 1);
+  transition: all 1s ease-out;
+  height: 400px;
+  width: 600px;
+  float: left;
+}
+
+.teimg2 {
+  transform: scale(1, 1);
+  transition: all 1s ease-out;
+  height: 400px;
+  width: 600px;
+  float: right;
+}
+
+.teimg1:hover {
+  transform: scale(1.1, 1.1);
+  height: 400px;
+  width: 600px;
+}
+
+.teimg2:hover {
+  transform: scale(1.1, 1.1);
+  height: 400px;
+  width: 600px;
+}
+
+.us-photo {
+  position: relative;
+  top: 1.2cm;
+  margin-left: 3cm;
+  height: 400px;
+  width: 600px;
+  overflow: hidden;
+}
+
+.us-photo-r {
+  position: relative;
+  top: 1.2cm;
+  margin-left: 26cm;
+  height: 400px;
+  width: 600px;
+  overflow: hidden;
+}
+
+.usdetail {
+  position: relative;
+  top: -9cm;
+  margin-left: 20cm;
+  width: 24cm;
+  line-height: 1.5cm;
+}
+
+.teus {
+  color: #0f4c5c;
+  font-size: 30px;
+}
+
+.teicon {
+  position: relative;
+  top: 0.8cm;
+  left: 15cm;
+  margin-left: 1cm;
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+}
+
+.teicon:hover {
+  -webkit-transform: rotate(25deg);
+}
+
+.usdetail-r {
+  position: relative;
+  top: -9.8cm;
+  margin-left: 1cm;
+  width: 24cm;
+  line-height: 1.5cm;
+}
+
+.teicon-f {
+  position: relative;
+  top: -0.8cm;
+  left: 15cm;
+  margin-left: 1cm;
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+}
+
+.teicon-f:hover {
+  -webkit-transform: rotate(25deg);
+}

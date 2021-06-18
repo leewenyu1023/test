@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logout {
+  position: absolute;
+  left: 45cm;
+  top: 0.9cm;
+  font-family: "小賴字體 等寬 SC";
+  height: 70px;
+  width: 70px;
+  font-size: 35px;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+}
+
+.title {
+  text-align: center;
+  margin-top: 1cm;
+  font-size: 45px;
+}
+
+.tab {
+  margin-top: 1.5cm;
+}
+
+table {
+  text-align: center;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 2px black solid;
+}
+
+th {
+  margin: 0%;
+  background-color: #D1DFE3;
+  width: 5cm;
+  height: 1.2cm;
+  font-size: 30px;
+}
+
+td {
+  font-size: 20px;
+  height: 1.2cm;
+}
+
+input {
+  font-size: 20px;
+  width: 4.5cm;
+  height: 0.8cm;
+}
+
+#topBtn {
+  z-index: 99;
+  border: none;
+  background-color: transparent;
+  position: fixed;
+  right: 2cm;
+  bottom: 2cm;
+}
+
+#topBtn img {
+  width: 80px;
+}
+
+.group-1 {
+  font-size: 30px;
+  margin-top: 3cm;
+}
+
+.group-1 input {
+  width: 10cm;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: 20px;
+}
+
+.group-1 label {
+  text-align: left;
+}
+
+.add {
+  text-align: center;
+}
+
+.btn-1 {
+  font-family: "小賴字體 等寬 SC";
+  border: none;
+  font-size: 25px;
+  margin-right: 1cm;
+  margin-left: 1cm;
+  width: 4cm;
+  height: 1.5cm;
+  background-color: #D1DFE3;
+}
+
+.btn-1:hover {
+  color: white;
+  border: 5px #9CA8B8 solid;
+}
